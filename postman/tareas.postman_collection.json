@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "cfbfa8ce-f099-4573-9f12-a6cba1a2285c",
+		"name": "tareas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - tareas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/tareas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - tareas por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/tareas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - tareas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\": \"Tarea 1\",\n\t\"descripcion\": \"Descripcion tarea 1\",\n\t\"estaFinalizada\": false\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/tareas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - tareas por Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\": \"Tarea 1 - actualizado 1\",\n\t\"descripcion\": \"Descripcion tarea 1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/tareas/5d641037cf1a734dae46fa90",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tareas",
+						"5d641037cf1a734dae46fa90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - tareas por Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/tareas/5d641037cf1a734dae46fa90",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tareas",
+						"5d641037cf1a734dae46fa90"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
